@@ -1,12 +1,8 @@
 class Bookmark
 
-  attr_reader :website, :websites
-
-  def initialize
-    @websites = ['Google']
-  end
-
-  def all
-    @websites
-  end
+  def self.all
+    ['http://www.makersacademy.com',
+     'http://www.facebook.com',
+     'http://google.com']
+   end
 end
