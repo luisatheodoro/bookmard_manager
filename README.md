@@ -1,0 +1,17 @@
+## BOOKMARK MANAGER
+
+##User Story
+```
+As a web user.
+So that I can view all my bookmarks.
+I want to be able to list them.
+```
+
+```
+The webrowser(client) makes a gets request to the controller(app).
+The controller(app) requests from the Model (Bookmark class) all bookmarks stored.
+The Model then returns in an array the bookmarks.
+The controller renders the bookmarks to the view and view returns the HTML to the controller(app)
+Then the controller(app) returns a response to the webrowser with the HTML file.
+
+```
