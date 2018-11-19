@@ -1,13 +1,12 @@
-class BookmarkManager
+class Bookmark
 
   attr_reader :website, :websites
 
-    def initalize(website)
-      @website = website
-      @websites = ['Google']
-    end
+  def initialize
+    @websites = ['Google']
+  end
 
-    def all
-      @websites
-    end
+  def all
+    @websites
+  end
 end

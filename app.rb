@@ -4,8 +4,9 @@ require './lib/bookmark'
 class BookmarkManager < Sinatra::Base
 
   get '/bookmarks' do
-    @bookmark = BookmarkManager.new
-    @bookmark.all
+    @bookmark = Bookmark.new
+    p @bookmark
+    p @bookmark.all
     erb :bookmarks
   end
 
