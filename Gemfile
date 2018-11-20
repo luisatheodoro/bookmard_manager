@@ -8,5 +8,6 @@ gem 'rspec'
 gem 'rspec-sinatra'
 gem 'rubocop'
 gem 'sinatra'
+gem 'pg'
 
 # gem "rails"
