@@ -24,7 +24,9 @@ class Bookmark
 
   def self.create(url:, title:)
     @connection.exec("INSERT INTO bookmarks (title, url) VALUES('#{title}', '#{url}') RETURNING id, url, title")
-
   end
 
+  def self.delete(id:)
+    @connection.exec("DELETE FROM bookmarks WHERE id = #{id}")
+  end
 end
